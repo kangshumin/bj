@@ -1,4 +1,6 @@
 import * as React from "react"
+import Layout from '../components/layout'
+
 
 // styles
 const pageStyles = {
@@ -9,7 +11,7 @@ const pageStyles = {
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 620,
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -126,10 +128,10 @@ const links = [
 ]
 
 // markup
-const IndexPage = () => {
+const IndexPage_zzOrig = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>庶民笔记</title>
       <h1 style={headingStyles}>
         Congratulations
         <br />
@@ -180,5 +182,16 @@ const IndexPage = () => {
     </main>
   )
 }
+
+
+const IndexPage = () => {
+  return (
+    <Layout pageTitle="Home Page">
+      <p>I'm making this by following the Gatsby Tutorial. Kang</p>
+    </Layout>
+  )
+}
+
+
 
 export default IndexPage
